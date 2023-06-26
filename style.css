@@ -4,9 +4,7 @@
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
-    box-sizing:border-box;
-    /* overflow-y: hidden; */
-    
+    box-sizing:border-box;    
 }
 
 body { 
@@ -15,44 +13,32 @@ body {
     box-sizing:border-box;
 }
 .logo{
-    /* padding-top: 10px; */
     margin-left: 10px;
     margin-top: 10px;
     width: 80px;
 }
 
 main{
-    /* width: 100%; */
     display: flex;
-    /* margin-bottom: 10px;
-    margin-left: 90px;
-    margin-right: 90px; */
     justify-content: space-evenly;
     gap: 20px;
-    /* min-height: 100vh; */
-    
 }
 .texto{
     height: 90vh;
     width: 50%;
-
-    
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
 }
 .text-area {
-    /* height: 400px; */
     height: 55%;
     width: 100%;
     border: none;
     color: #0A3871;
     margin-top: 30px;
     padding: 2px;
-    text-transform: lowercase;
-    
+    text-transform: lowercase;   
 }
 ::placeholder { color: #0A3871; }
   .text-area:focus {
@@ -62,7 +48,6 @@ main{
     
 .textareawrap {
     background:white ;
-    /* height: 100%; */
     position: relative; 
     margin-bottom: 32px;
     border: none;
@@ -71,7 +56,6 @@ main{
 .mensajeEncript{
     position: relative;
     height: 76vh;
-
 }
 .mensaje{
     
@@ -83,9 +67,6 @@ main{
     border: none;
     border-radius: 24px;
     color: #0A3871;
-    /* padding: 10px; */
-    /* margin-bottom: 32px; */
-    /* padding: 10px; */
     padding: 20px;
     padding-bottom: 30px;
     box-sizing:border-box;
@@ -107,16 +88,13 @@ main{
     right: 0; 
     margin-left: auto; 
     margin-right: auto;
-    box-sizing:border-box 
-  
-    
+    box-sizing:border-box  
 }
 .texth3{
     font-weight: 700;
     background: none;
     font-size: 24px;
     margin: 0;
-
 }
 
 .textp{
@@ -138,7 +116,6 @@ main{
     cursor: pointer;
     height: 67px;
     margin-left: 30px;
-    /* width: 328px;  */
     width: 90%;
 }
 
@@ -149,7 +126,6 @@ main{
     color: white;
     cursor: pointer;
     height: 67px;
-    /* width: 328px; */
     width: 90%;
 }
 
@@ -159,18 +135,7 @@ main{
     color: #0A3871;
     cursor: pointer;
     height: 67px;
-    
-    /* position: absolute; */
     width: 336px;
-   /* margin-bottom: 32px; */
-    
-    /* bottom: 0; */
-    /* margin-bottom: 32px; */
-    /* left: 50%;
-    transform: translateX(-50%); */
-   
-    /* position: absolute; 
-    bottom: 1%; */
     position: absolute; 
     bottom: 0.5%;
     left: 50%;
@@ -186,13 +151,10 @@ main{
 }
 .divInfo{
     width: 98%;
-    
 }
 
 @media  (max-width: 767px) {
-    body{
-        /* max-width: 100vh; */
-    }
+
     main{
         flex-direction: column;
     }
@@ -201,8 +163,6 @@ main{
         height: auto;
     }
     .mensajeEncript{
-        /* width: 100%; */
-
         width: 90%;
         display: flex;
         justify-content: center;
@@ -211,9 +171,9 @@ main{
     .botones{
        flex-direction: column;
        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 18px;
+       justify-content: center;
+       align-items: center;
+       margin-top: 18px;
     }
     .btn-desencriptar {
         width: 90%;
@@ -226,14 +186,6 @@ main{
         justify-content: center;
         align-items: center;
     }
-    /* .texth3{
-        margin: 0;
-    }
-    .textp{
-        
-        margin: 0;
-    } */
-
     .copiar {
         display: flex;
         justify-content: center;
@@ -243,9 +195,6 @@ main{
 }
 @media (max-width: 1023px) {
 
-    body{
-        /* min-width: 100vh; */
-    }
     main{
         margin: 10px;
         flex-direction: column;
@@ -271,15 +220,12 @@ main{
         justify-content: center;
         align-items: center;
         height: 20vh;
-
     }
 
     .btn-desencriptar {
         justify-content: center;
         align-items: center;
     }
-    
-    
     .btn-encriptar {
         justify-content: center;
         align-items: center;
@@ -291,19 +237,13 @@ main{
     }
 
     .mensaje{
-        /* margin: 10px; */
-       
-        /* padding: 32px; */
-        /* padding-bottom: 100px; */
         resize: none;
         width: 100%;
         margin-top: 20px;
         background-image: none;
-        
     }
     .texto-areaText{
         display: block;
-        /* top: 25%; */
     }
     .texth3 {
         top: 0;
@@ -318,22 +258,7 @@ main{
     }
 
     .copiar::before {
-        /* content: ''; */
         display: block;
-        height: 32px; /* Adjust the height as needed */
+        height: 32px;
       }
-
-      /* .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    
-        background-color: white; 
-        z-index: 0;
-       
-      } */
-
-   
 }
