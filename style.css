@@ -1,3 +1,4 @@
+
 *{
     background:#F3F5FC;
     font-family: 'Inter';
@@ -52,6 +53,7 @@ main{
     margin-bottom: 32px;
     border: none;
     border-radius: 24px;
+    height: 100%;
 }
 .mensajeEncript{
     position: relative;
@@ -60,6 +62,7 @@ main{
 .mensaje{
     
     height: 85%;
+    resize: none;
     background: white;
     background-image: url("imagenes/Muñeco.png");
     background-repeat: no-repeat;
@@ -117,7 +120,15 @@ main{
     height: 67px;
     margin-left: 30px;
     width: 90%;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
+.btn-desencriptar:hover {
+    border: none;
+    background-color: white;
+    color: #495057;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(88, 147, 218, 0.5);
+  }
 
 .btn-encriptar {
     background-color: #0A3871;
@@ -127,31 +138,105 @@ main{
     cursor: pointer;
     height: 67px;
     width: 90%;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
+.btn-encriptar:hover {
+    border: none;
+    background-color: white;
+    color: #0A3871;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(10, 56, 113, 0.5);
+  }
 
 .copiar {
-    border: 1px solid #0A3871;
+    display: none;
+    border: 1px solid ;
     border-radius: 24px;
     color: #0A3871;
-    cursor: pointer;
+    cursor: copy;
     height: 67px;
     width: 336px;
     position: absolute; 
-    bottom: 0.5%;
+    bottom: 5dvh;
     left: 50%;
     transform: translateX(-50%);
+    transition: transform 0.3s, opacity 0.3s;
+}
+.copiar:hover {
+    
+    color: white;
+    background-color: #0A3871;
+    transform: translateX(-50%) scale(0.9);
+    opacity: 0.9;
 }
 
+
 .informacion {
-    color: #495057;
-    font-size:18px;
+    color: black;
+    font-size:10px;
     margin-top: 5px;
     margin-bottom: 0;
     text-align:start;
+    cursor: not-allowed;
 }
 .divInfo{
     width: 98%;
 }
+hr{
+    margin:  0px 20px;
+    padding: 0;
+    border: 1px solid #0A3871; 
+}
+footer {
+    
+    background-color: #F3F5FC;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    margin: 0 20px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+  }
+  .footer-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-icons a {
+    margin-right: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-text{
+    border-left: 1px solid #0A3871;
+  }
+  .footer-text p {
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 20px;
+    color: #0A3871
+  }
+  .fa-brands{
+    font-weight: bolder;
+    background: none;
+    font-size: 20px;
+    color:#0A3871;
+    transform: scale(1);
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  .fa-brands:hover {
+    opacity: 0.5;
+    transform: translateY(-20%) scale(0.9);
+    opacity: 0.9;
+    
+   }
+
 
 @media  (max-width: 767px) {
 
@@ -187,7 +272,7 @@ main{
         align-items: center;
     }
     .copiar {
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -252,7 +337,6 @@ main{
 
         width: 90%;
         position: absolute; 
-        bottom: 0.5%;
         left: 50%;
         transform: translateX(-50%);
     }

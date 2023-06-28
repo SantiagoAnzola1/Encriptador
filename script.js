@@ -5,18 +5,54 @@ const tArea = document.getElementsByClassName("texto-areaText");
 const tAreap = document.querySelector(".textp");
 const areaButton = document.querySelector(".textareawrap");
 const mensajeEncript = document.querySelector(".mensajeEncript");
-copia.style.display = "none"
 
 window.onresize = resize;
+
+
+
+function myFunction(x, y) {
+    if (x.matches) {
+      textArea.rows = 5;
+    //   console.log("row 5 menos de 700px");
+    } else if (y.matches) {
+      textArea.rows = 8;
+    //   console.log("rows 6  701px - 1023px");
+    }
+  }
+  
+  var x = window.matchMedia("(max-width: 700px)");
+  var y = window.matchMedia("(min-width: 701px) and (max-width: 1023px)");
+  myFunction(x, y); 
+  
+  x.addListener(function (x) {
+    myFunction(x, y);
+  }); 
+  
+  y.addListener(function (y) {
+    myFunction(x, y);
+  }); 
+  
+
 function resize(callback) {
+    let textoEscrito = document.querySelector(".mensaje").value;
+    console.log(textoEscrito.length)
+    if(textoEscrito.length!=0){
+        mensaje.rows = 0;
         mensaje.style.cssText = `height: ${mensaje.scrollHeight}px; overflow-y: hidden`;
         mensaje.style.height = 'auto';
+        console.log(mensaje.scrollHeight)
         mensaje.style.height = `${(mensaje.scrollHeight)+15}px`;
-        mensajeEncript.style.height=`${(mensaje.scrollHeight)+40}px`;
-        areaButton.style.height=`${(mensaje.scrollHeight)+40}px`;
+        mensajeEncript.style.height=`${(mensaje.scrollHeight)+90}px`;
+        areaButton.style.height=`${(mensaje.scrollHeight)+90}px`;
+        mensaje.style.backgroundImage = "none";
         if (typeof callback === 'function') {
+           
             callback();
-        }    
+           
+    } 
+    }
+    
+       
 }
  
 function validarTexto(){
@@ -27,7 +63,12 @@ function validarTexto(){
         alert("Solo son permitidas letras minúsculas y sin acentos")
         location.reload();
         return true;
-    }   
+    } 
+    if(textoEscrito.length==0){
+        alert("No hay ningún texto para encriptar/desencriptar")
+        location.reload();
+        return true;
+    }  
 }
 
 function btnEncriptar(){
@@ -39,9 +80,14 @@ function btnEncriptar(){
         copia.style.display = "block";
         tArea[0].style.display="none";
         textArea.value = "";
-        resize(function() {
-            mensaje.style.backgroundImage = "none";
-        });
+        
+            resize(function() {
+           
+                mensaje.style.backgroundImage = "none";
+            });
+        
+
+       
     }
 }
 
@@ -60,9 +106,17 @@ function encriptar(stringEncriptada){
 
 
 function btnDesencriptar(){
+    
     const textoEncriptado = desencriptar(textArea.value)
     mensaje.value = textoEncriptado
+    copia.style.display = "block";
+    tArea[0].style.display="none";
     textArea.value = "";
+    mensaje.rows = 0;
+    resize(function() {
+           
+        mensaje.style.backgroundImage = "none";
+    });
 }
 
 
