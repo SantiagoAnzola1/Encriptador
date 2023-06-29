@@ -146,8 +146,7 @@ main{
     color: #0A3871;
     transform: scale(1.05);
     box-shadow: 0 0 10px rgba(10, 56, 113, 0.5);
-  }
-
+}
 .copiar {
     display: none;
     border: 1px solid ;
@@ -169,18 +168,23 @@ main{
     transform: translateX(-50%) scale(0.9);
     opacity: 0.9;
 }
-
-
 .informacion {
-    color: black;
-    font-size:10px;
+    color: E5E5E5;
+    font-size:12px;
     margin-top: 5px;
     margin-bottom: 0;
     text-align:start;
-    cursor: not-allowed;
 }
 .divInfo{
     width: 98%;
+    display:flex ;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    cursor: not-allowed;
+}
+.divInfo img{
+    height: auto;
 }
 hr{
     margin:  0px 20px;
@@ -216,11 +220,14 @@ footer {
   .footer-text{
     border-left: 1px solid #0A3871;
   }
-  .footer-text p {
+  .footer-text p, span {
     font-weight: 500;
     font-size: 14px;
     margin: 0 20px;
     color: #0A3871
+  }
+  .footer-text p span {
+    margin: 0;
   }
   .fa-brands{
     font-weight: bolder;
@@ -317,7 +324,7 @@ footer {
     }
 
     .textareawrap {
-        height: 80%;
+        /* height: 80%; */
         width: 100%;
     }
 

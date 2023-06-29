@@ -5,11 +5,9 @@ const tArea = document.getElementsByClassName("texto-areaText");
 const tAreap = document.querySelector(".textp");
 const areaButton = document.querySelector(".textareawrap");
 const mensajeEncript = document.querySelector(".mensajeEncript");
+document.getElementById("year").innerHTML = new Date().getFullYear();
 
 window.onresize = resize;
-
-
-
 function myFunction(x, y) {
     if (x.matches) {
       textArea.rows = 5;
