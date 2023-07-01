@@ -2,6 +2,11 @@
 
 #  :closed_lock_with_key: Encriptador de texto 
 ![image](https://github.com/SantiagoAnzola1/Encriptador/assets/134959710/ceddcd44-d4e1-4262-a581-6d7f2d0d519e)
+<p align="center">
+  | <a href=(READMEEN.md)>English</a> | 
+    <span>Español</span> |
+</p>
+<br>
 
 ## :hammer_and_wrench: Lenguajes y herramientas:
 <p align="center" > <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img margin-right="10px"src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> </p>
