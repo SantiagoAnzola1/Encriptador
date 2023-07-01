@@ -3,7 +3,7 @@
 #  :closed_lock_with_key: Encriptador de texto 
 ![image](https://github.com/SantiagoAnzola1/Encriptador/assets/134959710/ceddcd44-d4e1-4262-a581-6d7f2d0d519e)
 <p align="center">
-  | <a href=(READMEEN.md)>English</a> | 
+  | <a href=READMEEN.md>English</a> | 
     <span>Español</span> |
 </p>
 <br>
